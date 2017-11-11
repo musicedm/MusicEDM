@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1d272c</color>
+    <color name="colorPrimaryDark">#1d272c</color>
+    <color name="colorAccent">#fa695f</color>
+    <color name="colorTextprimary">#B2DFDB</color>
+    <color name="secondaryText">#727272</color>
+    <color name="primaryText">#212121</color>
+    <color name="driverColor">#B6B6B6</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="seekBarColor">#ffc107</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="bgM1">#f4f2f2</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="colorP1">#34223c</color>
+    <color name="colorP2">#7B1FA2</color>
+
+
+
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:background="@drawable/rounded_btn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:elevation="3dp"
+    android:translationZ="5dp"
+    android:padding="7dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:adjustViewBounds="true"
+        android:src="@drawable/loaded"
+        android:scaleType="centerCrop"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:layout_below="@+id/title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:id="@+id/tvTitle"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/cardview_light_background"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tvCat"
+        android:textColor="@color/cardview_light_background"
+        android:layout_below="@+id/tvTitle"
+        android:layout_toEndOf="@+id/thumbnail" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_toEndOf="@+id/thumbnail">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView10"
+            android:src="@drawable/likeic"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/tvLike"
+            android:layout_alignTop="@+id/tvLike" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="69"
+            android:id="@+id/tvLike"
+            android:textSize="14dp"
+            android:padding="5dp"
+            android:textColor="@color/cardview_light_background"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="20"
+            android:id="@+id/tvComment"
+            android:textSize="14dp"
+            android:padding="5dp"
+            android:textColor="@color/cardview_light_background"
+            android:layout_alignTop="@+id/imageView10"
+            android:layout_toStartOf="@+id/imageView10" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:src="@drawable/cmtic"
+            android:layout_alignTop="@+id/tvComment"
+            android:layout_toStartOf="@+id/tvComment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="19"
+            android:id="@+id/tvView"
+            android:textSize="14dp"
+            android:textColor="@color/cardview_light_background"
+            android:padding="5dp"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_toStartOf="@+id/imageView4" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView11"
+            android:src="@drawable/hpic"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/tvView"
+            android:layout_alignTop="@+id/tvView" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

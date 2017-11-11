@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MainActivity">
+   <LinearLayout
+       android:id="@+id/bgplay"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/edmdemo"
+       android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F22b313e">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/edmdemo"
+        android:id="@+id/imgScreenplayer" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:id="@+id/SeekBarplay"
+        android:background="@null"
+        android:progress="100"
+        android:max="100"
+        android:progressDrawable="@drawable/custom_seekbar"
+        android:splitTrack="false"
+        android:thumb="@null"
+        android:padding="0dp"
+        android:layout_marginTop="-8dp"
+        android:layout_marginLeft="-16dp"
+        android:layout_marginRight="-16dp"
+        android:layout_alignStart="@+id/imgScreenplayer"
+        android:layout_below="@+id/imgScreenplayer"
+        android:layout_alignEnd="@+id/imgScreenplayer"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="00:00"
+        android:textColor="#ffffff"
+        android:id="@+id/tvDur1"
+        android:layout_below="@+id/SeekBarplay"
+        android:layout_alignStart="@+id/imgScreenplayer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="00:00"
+        android:id="@+id/tvDur2"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/tvDur1"
+        android:layout_alignBottom="@+id/tvDur1"
+        android:layout_alignEnd="@+id/imgScreenplayer" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:textColor="#8Cffffff"
+            android:text="Faded - Alan walker"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:textSize="22dp"
+            android:id="@+id/tvTitle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:paddingLeft="40dp"
+            android:textColor="#8Cffffff"
+            android:text="Vina hey"
+            android:id="@+id/tvCat"
+            android:layout_below="@+id/tvTitle"
+            android:layout_toEndOf="@+id/tvTitle"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:padding="5dp"
+            android:src="@drawable/backx"
+            android:id="@+id/backbtn"
+            android:layout_alignBottom="@+id/tvTitle"
+            android:layout_alignParentStart="true" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/tvDur1">
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/imgCd"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:id="@+id/btnShare"
+                android:src="@drawable/share"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:id="@+id/btnComment"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/icomment"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/fabplay"
+                android:src="@drawable/pausebtn"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/btnPrev"
+                android:src="@drawable/pre"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/btnNext"
+                android:src="@drawable/next"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+   </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Monster EDM</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="long_click_to_delete">Long click to delete item</string>
+    <string name="download_to">Download into folder</string>
+    <string name="edit_name"> (Edit)</string>
+    <string name="name">Name: </string>
+
+    <string name="nav_item_home">Top New</string>
+    <string name="nav_item_trends">Top Listent</string>
+    <string name="nav_item_fav">Top Like</string>
+    <string name="nav_item_yeuthich">Liked</string>
+    <string name="nav_item_cat">Category</string>
+    <string name="nav_item_contact">Send Feedback</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_trends</item>
+        <item>@string/nav_item_fav</item>
+        <item>@string/nav_item_yeuthich</item>
+        <item>@string/nav_item_cat</item>
+        <item>@string/nav_item_contact</item>
+    </string-array>
+
+    <string name="title_trends">Top Listent</string>
+    <string name="title_fav">Top Listent</string>
+    <string name="title_yeuthich">Liked</string>
+    <string name="title_home">Top New</string>
+    <string name="title_cat">Category</string>
+    <string name="title_contact">Send Feedback</string>
+
+    <string-array name="nav_drawer_icons">
+        <item>@drawable/mhdianhac</item>
+        <item>@drawable/mhheadphone</item>
+        <item>@drawable/favorite</item>
+        <item>@drawable/mhnotnhac</item>
+        <item>@drawable/multimedia</item>
+        <item>@drawable/mail</item>
+    </string-array>
+</resources>
